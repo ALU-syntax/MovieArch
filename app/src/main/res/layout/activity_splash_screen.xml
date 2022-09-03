@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreenActivity"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_header"/>
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/tv_m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M"
+            android:layout_toLeftOf="@id/iv_roll"
+            android:textColor="@color/black"
+            android:layout_marginLeft="500dp"
+            android:textSize="80sp" />
+
+        <ImageView
+            android:id="@+id/iv_roll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/tv_vie"
+            android:src="@drawable/ic_roll" />
+
+        <TextView
+            android:id="@+id/tv_vie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="105dp"
+            android:layout_alignParentRight="true"
+            android:text="vie"
+            android:textColor="@color/black"
+            android:textSize="80sp" />
+
+        <TextView
+            android:id="@+id/tv_archive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Archive"
+            android:textSize="80sp"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/iv_roll"
+            />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_header"
+        android:adjustViewBounds="true"/>
+</RelativeLayout>
