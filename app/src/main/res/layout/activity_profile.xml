@@ -23,6 +23,15 @@
             android:src="@drawable/ic_baseline_arrow_back_24"
             android:background="@android:color/transparent"/>
 
+        <TextView
+            android:id="@+id/tv_tittle_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:layout_marginStart="30dp"/>
+
     </androidx.appcompat.widget.Toolbar>
 
 
@@ -48,6 +57,53 @@
         android:layout_marginTop="25dp"
         android:textColor="@color/black"
         android:textSize="20sp"
+        android:textStyle="bold"
         />
+
+<!--    Github : https://github.com/ALU-syntax-->
+<!--    * Twitter : https://twitter.com/mengkerebe-->
+<!--    * Instagram : https://www.instagram.com/ardian_iqbal_-->
+<!--    * LinkedIn : https://www.linkedin.com/in/ardianiqbal-->
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:padding="20dp"
+
+        android:layout_marginBottom="80dp">
+
+        <ImageView
+            android:id="@+id/iv_github"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/github"/>
+
+        <ImageView
+            android:id="@+id/iv_twitter"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/twitter"/>
+
+        <ImageView
+            android:id="@+id/iv_instagram"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/instagram"/>
+
+        <ImageView
+            android:id="@+id/iv_linkedin"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/linkedin"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
